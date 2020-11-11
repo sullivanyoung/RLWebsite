@@ -64,5 +64,11 @@ namespace RocketLeague.Controllers
             }
             return View();
         }
+
+        public ActionResult Individual()
+        {
+
+            return View();
+        }
     }
 }

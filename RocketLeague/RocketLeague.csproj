@@ -134,7 +134,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\BDS_Esport_2019_std.png" />
     <Content Include="Content\Images\Ca_hd.png" />
+    <Content Include="Content\Images\Es_hd.png" />
+    <Content Include="Content\Images\Fr_hd.png" />
     <Content Include="Content\Images\G2_Esports_2019_std.png" />
     <Content Include="Content\Images\Us_hd.png" />
     <Content Include="favicon.ico" />
@@ -171,6 +174,7 @@
     <Content Include="Views\Liquipedia\Teams.cshtml" />
     <Content Include="Views\Liquipedia\PlayerRegistration.cshtml" />
     <Content Include="Views\Liquipedia\Player.cshtml" />
+    <Content Include="Views\Shared\Individual.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

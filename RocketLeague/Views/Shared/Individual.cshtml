@@ -1,0 +1,84 @@
+﻿@model RocketLeague.Models.PlayerRegistrationModel
+
+<div>
+    <h4>PlayerRegistrationModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.playerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.playerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.playerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.playerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.userName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.playerBirthdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.playerBirthdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.playerTeam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.playerTeam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.playerEarnings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.playerEarnings)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.system)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.system)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.timeZone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.timeZone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mmr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mmr)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
