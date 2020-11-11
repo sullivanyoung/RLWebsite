@@ -9,27 +9,34 @@ namespace RocketLeague.Models
     public class PlayerRegistration
     {
         [Display(Name = "Player ID")]
+        [Range(100000, 999999, ErrorMessage = "You need to enter valid Player ID")]
         public int playerId { get; set; }
 
         [Display(Name = "Name")]
+        [Required(ErrorMessage = "You must enter a name")]
         public string playerName { get; set; }
 
-        [Display(Name = "Birthday")]
+        [Display(Name = "Birthdate")]
+        [Required(ErrorMessage = "You must enter a birthdate")]
         public string playerBirthDate { get; set; }
 
         [Display(Name = "Team")]
+        [Required(ErrorMessage = "You must enter a Team name")]
         public string playerTeam { get; set; }
 
         [Display(Name = "Approx. Earnings")]
         public double playerEarnings { get; set; }
 
         [Display(Name = "System")]
+        [Required(ErrorMessage = "You must enter a your system")]
         public string system { get; set; }
 
         [Display(Name = "Time Zone")]
+        [Required(ErrorMessage = "You must enter your time zone")]
         public string timeZone { get; set; }
 
         [Display(Name = "Peak MMR")]
+        [Required(ErrorMessage = "You must enter your peak MMR")]
         public int mmr { get; set; }
 
 
