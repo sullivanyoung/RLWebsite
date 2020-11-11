@@ -1,8 +1,11 @@
-﻿using System;
+﻿using RocketLeague.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Services.Description;
+using System.Windows;
 
 namespace RocketLeague.Controllers
 {
@@ -21,6 +24,18 @@ namespace RocketLeague.Controllers
         public ActionResult PlayerRegistration()
         {
             ViewBag.Message = "Player Registration Page";
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult PlayerRegistration(PlayerRegistration model)
+        {
+            if (ModelState.IsValid)
+            {
+                MessageBox.Show("You have successfully registered your account");
+                return RedirectToAction("Liquipedia", "Home");
+            }
             return View();
         }
     }

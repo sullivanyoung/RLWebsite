@@ -12,9 +12,13 @@ namespace RocketLeague.Models
         [Range(100000, 999999, ErrorMessage = "You need to enter valid Player ID")]
         public int playerId { get; set; }
 
-        [Display(Name = "Name")]
-        [Required(ErrorMessage = "You must enter a name")]
+        [Display(Name = "Full Name")]
+        [Required(ErrorMessage = "You must enter your full name")]
         public string playerName { get; set; }
+
+        [Display(Name = "Username")]
+        [Required(ErrorMessage = "You must enter a username")]
+        public string userName { get; set; }
 
         [Display(Name = "Birthdate")]
         [Required(ErrorMessage = "You must enter a birthdate")]
@@ -25,6 +29,7 @@ namespace RocketLeague.Models
         public string playerTeam { get; set; }
 
         [Display(Name = "Approx. Earnings")]
+        [Required(ErrorMessage = "You must enter your total earnings")]
         public double playerEarnings { get; set; }
 
         [Display(Name = "System")]
