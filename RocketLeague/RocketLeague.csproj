@@ -126,7 +126,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\PlayerModel.cs" />
     <Compile Include="Models\PlayerRegistrationModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -170,8 +169,8 @@
     <Content Include="Views\Home\Liquipedia.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Liquipedia\Teams.cshtml" />
-    <Content Include="Views\Liquipedia\Player.cshtml" />
     <Content Include="Views\Liquipedia\PlayerRegistration.cshtml" />
+    <Content Include="Views\Liquipedia\Player.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -188,6 +187,12 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataLibrary\DataLibrary.csproj">
+      <Project>{1467d0dd-9045-4c08-bbcb-0b10fe2ff3f2}</Project>
+      <Name>DataLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

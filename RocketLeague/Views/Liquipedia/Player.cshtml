@@ -1,58 +1,76 @@
-﻿@model RocketLeague.Models.PlayerModel
+﻿@model IEnumerable<RocketLeague.Models.PlayerRegistrationModel>
 
-@{
+@{ 
     ViewBag.Title = "Player";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Player</h2>
+<h2>Players Page</h2>
 
-<div>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.playerId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.playerId)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.playerName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.playerName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.playerBirthDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.playerBirthDate)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.playerTeam)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.playerTeam)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.playerEarnings)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.playerEarnings)
-        </dd>
-
-    </dl>
-</div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    @Html.ActionLink("Back to List", "Teams")
+    @Html.ActionLink("Create New", "PlayerRegistration", "Liquipedia")
 </p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.playerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.playerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.userName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.playerBirthdate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.playerTeam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.playerEarnings)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.system)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.timeZone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mmr)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.playerId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.playerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.userName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.playerBirthdate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.playerTeam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.playerEarnings)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.system)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.timeZone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mmr)
+        </td>
+    </tr>
+}
+
+</table>

@@ -30,7 +30,7 @@ namespace RocketLeague.Models
 
         [Display(Name = "Approx. Earnings")]
         [Required(ErrorMessage = "You must enter your total earnings")]
-        public double playerEarnings { get; set; }
+        public int playerEarnings { get; set; }
 
         [Display(Name = "System")]
         [Required(ErrorMessage = "You must enter a your system")]

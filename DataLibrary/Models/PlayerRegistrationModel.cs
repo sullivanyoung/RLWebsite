@@ -14,7 +14,7 @@ namespace DataLibrary.Models
         public string userName { get; set; }
         public string playerBirthDate { get; set; }
         public string playerTeam { get; set; }
-        public string playerEarnings { get; set; }
+        public int playerEarnings { get; set; }
         public string system { get; set; }
         public string timeZone { get; set; }
         public int mmr { get; set; }
