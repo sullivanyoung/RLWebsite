@@ -29,7 +29,7 @@ namespace RocketLeague.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult PlayerRegistration(PlayerRegistration model)
+        public ActionResult PlayerRegistration(PlayerRegistrationModel model)
         {
             if (ModelState.IsValid)
             {

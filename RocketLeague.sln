@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RocketLeague", "RocketLeague\RocketLeague.csproj", "{4FCD32EC-386E-4A8C-BA64-33A601CD00B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibrary", "DataLibrary\DataLibrary.csproj", "{1467D0DD-9045-4C08-BBCB-0B10FE2FF3F2}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "RocketLeagueDB", "RocketLeagueDB\RocketLeagueDB.sqlproj", "{66605504-DE91-4129-8481-3E4B14EF81C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{4FCD32EC-386E-4A8C-BA64-33A601CD00B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FCD32EC-386E-4A8C-BA64-33A601CD00B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FCD32EC-386E-4A8C-BA64-33A601CD00B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1467D0DD-9045-4C08-BBCB-0B10FE2FF3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1467D0DD-9045-4C08-BBCB-0B10FE2FF3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1467D0DD-9045-4C08-BBCB-0B10FE2FF3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1467D0DD-9045-4C08-BBCB-0B10FE2FF3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66605504-DE91-4129-8481-3E4B14EF81C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66605504-DE91-4129-8481-3E4B14EF81C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66605504-DE91-4129-8481-3E4B14EF81C7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{66605504-DE91-4129-8481-3E4B14EF81C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66605504-DE91-4129-8481-3E4B14EF81C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66605504-DE91-4129-8481-3E4B14EF81C7}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

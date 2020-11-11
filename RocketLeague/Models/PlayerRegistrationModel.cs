@@ -6,7 +6,7 @@ using System.Web;
 
 namespace RocketLeague.Models
 {
-    public class PlayerRegistration
+    public class PlayerRegistrationModel
     {
         [Display(Name = "Player ID")]
         [Range(100000, 999999, ErrorMessage = "You need to enter valid Player ID")]
@@ -22,7 +22,7 @@ namespace RocketLeague.Models
 
         [Display(Name = "Birthdate")]
         [Required(ErrorMessage = "You must enter a birthdate")]
-        public string playerBirthDate { get; set; }
+        public string playerBirthdate { get; set; }
 
         [Display(Name = "Team")]
         [Required(ErrorMessage = "You must enter a Team name")]
@@ -41,7 +41,7 @@ namespace RocketLeague.Models
         public string timeZone { get; set; }
 
         [Display(Name = "Peak MMR")]
-        [Required(ErrorMessage = "You must enter your peak MMR")]
+        [Range(1, 2500, ErrorMessage = "You need to enter valid mmr")]
         public int mmr { get; set; }
 
 

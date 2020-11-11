@@ -127,7 +127,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\PlayerModel.cs" />
-    <Compile Include="Models\PlayerRegistration.cs" />
+    <Compile Include="Models\PlayerRegistrationModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
