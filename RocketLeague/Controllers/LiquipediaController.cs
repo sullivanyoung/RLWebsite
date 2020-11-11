@@ -17,5 +17,11 @@ namespace RocketLeague.Controllers
             ViewBag.Message = "Player Page";
             return View();
         }
+
+        public ActionResult PlayerRegistration()
+        {
+            ViewBag.Message = "Player Registration Page";
+            return View();
+        }
     }
 }
