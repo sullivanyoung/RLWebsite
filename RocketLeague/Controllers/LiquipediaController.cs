@@ -14,6 +14,7 @@ namespace RocketLeague.Controllers
         }
         public ActionResult Player()
         {
+            ViewBag.Message = "Player Page";
             return View();
         }
     }

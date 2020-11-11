@@ -1,0 +1,59 @@
+﻿@model RocketLeague.Models.PlayerModel
+
+@{
+    ViewBag.Title = "Player";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Player</h2>
+
+<div>
+    <h4>PlayerModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.playerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.playerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.playerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.playerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.playerBirthDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.playerBirthDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.playerTeam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.playerTeam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.playerEarnings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.playerEarnings)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
