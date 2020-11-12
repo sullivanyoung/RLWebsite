@@ -8,8 +8,6 @@ namespace RocketLeague.Models
 {
     public class PlayerRegistrationModel
     {
-        public int playerId { get; set; }
-
         [Display(Name = "Full Name")]
         [Required(ErrorMessage = "You must enter your full name")]
         public string playerName { get; set; }

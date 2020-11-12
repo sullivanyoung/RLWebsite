@@ -1,7 +1,15 @@
 ﻿@model RocketLeague.Models.PlayerRegistrationModel
 
+@{
+    ViewBag.Title = "Rizzo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Rizzo</h2>
+<div class="right">
+    <img src="~/Content/Images/DHMONTREAL_2019_RL_RIZZO.jpg" alt="Rizzo" width="500" height="250" loading="lazy" />
+</div>
 <div>
-    <h4>PlayerRegistrationModel</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -9,7 +17,8 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.playerName)
+            @*@Html.DisplayFor(model => model.playerName)*@
+            Dillion Rizzo
         </dd>
 
         <dt>
@@ -17,7 +26,8 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.userName)
+            @*@Html.DisplayFor(model => model.userName)*@
+            Rizzo
         </dd>
 
         <dt>
@@ -33,7 +43,8 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.playerTeam)
+            @*Html.DisplayFor(model => model.playerTeam)*@
+            G2
         </dd>
 
         <dt>
@@ -67,10 +78,8 @@
         <dd>
             @Html.DisplayFor(model => model.mmr)
         </dd>
-
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "Teams", "Liquipedia")
 </p>

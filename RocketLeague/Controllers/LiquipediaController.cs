@@ -64,8 +64,9 @@ namespace RocketLeague.Controllers
             return View();
         }
 
-        public ActionResult Individual()
+        public ActionResult Rizzo()
         {
+            ViewBag.Message = "Rizzo";
 
             return View();
         }

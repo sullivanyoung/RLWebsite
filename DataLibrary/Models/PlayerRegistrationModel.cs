@@ -9,7 +9,6 @@ namespace DataLibrary.Models
     public class PlayerRegistrationModel
     {
         public int Id { get; set; }
-        public int playerId { get; set; }
         public string playerName { get; set; }
         public string userName { get; set; }
         public string playerBirthDate { get; set; }
