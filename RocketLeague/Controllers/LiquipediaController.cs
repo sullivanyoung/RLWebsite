@@ -30,7 +30,6 @@ namespace RocketLeague.Controllers
             {
                 players.Add(new PlayerRegistrationModel
                 {
-                    playerId = row.playerId,
                     playerName = row.playerName,
                     userName = row.userName,
                     playerBirthdate = row.playerBirthDate,
@@ -57,7 +56,7 @@ namespace RocketLeague.Controllers
         {
             if (ModelState.IsValid)
             {
-                int recordsCreated = CreatePlayer(model.playerId, model.playerName, model.userName, model.playerBirthdate, model.playerTeam, 
+                int recordsCreated = CreatePlayer(model.playerName, model.userName, model.playerBirthdate, model.playerTeam, 
                     model.playerEarnings, model.system, model.timeZone, model.mmr);
                 MessageBox.Show("You have successfully registered your account");
                 return RedirectToAction("Liquipedia", "Home");

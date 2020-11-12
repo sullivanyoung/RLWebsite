@@ -8,8 +8,6 @@ namespace RocketLeague.Models
 {
     public class PlayerRegistrationModel
     {
-        [Display(Name = "Player ID")]
-        [Range(100000, 999999, ErrorMessage = "You need to enter valid Player ID")]
         public int playerId { get; set; }
 
         [Display(Name = "Full Name")]
@@ -21,6 +19,7 @@ namespace RocketLeague.Models
         public string userName { get; set; }
 
         [Display(Name = "Birthdate")]
+        [DataType(DataType.Date)]
         [Required(ErrorMessage = "You must enter a birthdate")]
         public string playerBirthdate { get; set; }
 
@@ -29,8 +28,9 @@ namespace RocketLeague.Models
         public string playerTeam { get; set; }
 
         [Display(Name = "Approx. Earnings")]
+        [DataType(DataType.Currency)]
         [Required(ErrorMessage = "You must enter your total earnings")]
-        public int playerEarnings { get; set; }
+        public decimal playerEarnings { get; set; }
 
         [Display(Name = "System")]
         [Required(ErrorMessage = "You must enter a your system")]
