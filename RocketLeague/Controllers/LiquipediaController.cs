@@ -70,5 +70,26 @@ namespace RocketLeague.Controllers
 
             return View();
         }
+
+        public ActionResult Jknaps()
+        {
+            ViewBag.Message = "Jknaps";
+
+            return View();
+        }
+
+        public ActionResult Chicago()
+        {
+            ViewBag.Message = "Chicago";
+
+            return View();
+        }
+
+        public ActionResult G2()
+        {
+            ViewBag.Message = "G2";
+
+            return View();
+        }
     }
 }

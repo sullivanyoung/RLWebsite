@@ -130,12 +130,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\600px-DHVALENCIA_2019_RL_CHICAGO.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\BDS_Esport_2019_std.png" />
     <Content Include="Content\Images\Ca_hd.png" />
+    <Content Include="Content\Images\DHMONTREAL_2019_RL_JKNAPS.jpg" />
     <Content Include="Content\Images\DHMONTREAL_2019_RL_RIZZO.jpg" />
     <Content Include="Content\Images\Es_hd.png" />
     <Content Include="Content\Images\Fr_hd.png" />
@@ -176,6 +178,9 @@
     <Content Include="Views\Liquipedia\PlayerRegistration.cshtml" />
     <Content Include="Views\Liquipedia\Player.cshtml" />
     <Content Include="Views\Liquipedia\Rizzo.cshtml" />
+    <Content Include="Views\Liquipedia\Jknaps.cshtml" />
+    <Content Include="Views\Liquipedia\Chicago.cshtml" />
+    <Content Include="Views\Liquipedia\G2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

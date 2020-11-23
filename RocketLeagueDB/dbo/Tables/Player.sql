@@ -11,4 +11,3 @@
     [mmr]             INT           NOT NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
-
